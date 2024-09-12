@@ -19,7 +19,7 @@ const UserInput = () => {
         <div>
         <span className='input-group'>
             <span><label>Initial Investment</label><input onChange={(event)=>handleChange('initialInvestment',event.target.value)} type='number' value={"100000"} /> </span>  
-            <span><label>Annual Investment</label><input type='number' value={"200000"} /> </span>       
+            <span><label>Annual Investment</label><input type='number' value={value} /> </span>       
         </span>
         </div>
         <div>

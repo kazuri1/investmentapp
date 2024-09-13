@@ -1,19 +1,7 @@
-import React, { useState } from 'react'
 
-const UserInput = () => {
- const [userInput,setUserInput] =  useState({    
-    initialInvestment: 10000,
-    annualInvestment: 20000,
-    expectedReturns : 6,
-    duration: 12
-  }
-  )
-  function handleChange(inputIdentifier,newValue){
-    setUserInput(prevUserInput=>{ 
-      return{ ...prevUserInput,[inputIdentifier]:newValue
-      }
-    });
-  }
+const UserInput = ({handleChange, userInput}) => {
+ 
+  
   return (
     <div id = "user-input">
         <div>

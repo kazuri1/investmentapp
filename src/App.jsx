@@ -8,13 +8,13 @@ function App() {
   const [userInput,setUserInput] =  useState({    
     initialInvestment: 10000,
     annualInvestment: 20000,
-    expectedReturns : 6,
+    expectedReturn : 6,
     duration: 12
   }
   )
      function handleChange(inputIdentifier,newValue){
       setUserInput(prevUserInput=>{ 
-        return{ ...prevUserInput,[inputIdentifier]:+snewValue
+        return{ ...prevUserInput,[inputIdentifier]:+newValue
         }
       });
     }
